@@ -7,22 +7,46 @@
 </head>
 <body>
     <header class="header"> 
-        <img src="images/logo.png" alt=Логотип width="159" height="40">
-        <h1>Booriva</h1>
-        <nav>
-            <ul>
-                <li><a href="#"><img src="images/fluent_location-12-regular.png" alt=""> Адрес</a></li>
-                <li><a href="#"><img src="images/icons8_iphone.png" alt="">Телефон</a></li>
-                <li><a href="#"><img src="images/ri_search-2-line.png" alt="">Поиск</a></li>
-                <li><a href="#"><img src="images/akar-icons_heart.png" alt="">Понравившееся</a></li>
-                <li><a href="#"><img src="images/akar-icons_shopping-bag.png" alt="">Корзина</a></li>
-                <li><a href="#">Новинки</a></li>
-                <li><a href="#">Платья</a></li>
-                <li><a href="#">Верх</a></li>
-                <li><a href="#">Низ</a></li>
-                <li><a href="#">Куртки</a></li>
-                <li><a href="#">Мелочи</a></li>
-                <li><a href="#">Костюмы</a></li>
+        <img class="header__logo" src="images/logo.png" alt="Логотип" width="159" height="40">
+        <h1 class="header__title">Booriva</h1>
+        <nav class="header__menu">
+            <ul class="menu">
+                <li class="menu__item">
+                    <a class="menu__link" href="#"><img src="images/fluent_location-12-regular.png" alt=""> Адрес</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="#"><img src="images/icons8_iphone.png" alt="">Телефон</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="#"><img src="images/ri_search-2-line.png" alt="">Поиск</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="#"><img src="images/akar-icons_heart.png" alt="">Понравившееся</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="#"><img src="images/akar-icons_shopping-bag.png" alt="">Корзина</a>
+                </li>
+                <li class="menu__item menu__item--active">
+                    <a class="menu__link" href="index.html">Новинки</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="#">Платья</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="#">Верх</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="#">Низ</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="#">Куртки</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="#">Мелочи</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="#">Костюмы</a>
+                </li>
             </ul>
         </nav>
     </header> 
@@ -32,28 +56,28 @@
         </figure>
         <section>
             <div class="new"> 
-                <h2>Новинки</h2>
+                <h2 class="new__title">Новинки</h2>
             </div>
              <ul>
                 <li>
-                    <img src="/images/CardM.png" alt="Свитшот" width="360" height="530">
-                    <a href="#">Свитшот вставка клетка</a>
-                    <span>1099 ₴</span>
+                    <img class="clothes__image" src="/images/CardM.png" alt="Фото одежды" width="360" height="530">
+                    <a class="clothing__name" href="#">Свитшот вставка клетка</a>
+                    <span class="clothing__price">1099 ₴</span>
                 </li>
                 <li>
-                    <img src="/images/dress_in_flowers.png" alt="Платье в цветочек" width="360" height="530">
-                    <a href="#">Платье прозрачное в цветочек черное</a>
-                    <span>1299 ₴</span>
+                    <img class="clothes__image" src="/images/dress_in_flowers.png" alt="Фото одежды" width="360" height="530">
+                    <a class="clothing__name" href="#">Платье прозрачное в цветочек черное</a>
+                    <span class="clothing__price">1299 ₴</span>
                 </li>
                 <li>
-                    <img src="/images/bomber.png" alt="Бомбер хаки" width="360" height="530">
-                    <a href="#">Бомбер Gone Crazy хаки</a>
-                    <span>2499 ₴</span>
+                    <img class="clothes__image" src="/images/bomber.png" alt="Фото одежды" width="360" height="530">
+                    <a class="clothing__name" href="#">Бомбер Gone Crazy хаки</a>
+                    <span class="clothing__price">2499 ₴</span>
                 </li>
                 <li>
-                    <img src="/images/dress_t-shirt_fish.png" alt="Платье-футболка" width="360" height="530">
-                    <a href="#">Платье-футболка рыбы в аквариуме</a>
-                    <span>899 ₴</span>
+                    <img class="clothes__image" src="/images/dress_t-shirt_fish.png" alt="Фото одежды" width="360" height="530">
+                    <a class="clothing__name" href="#">Платье-футболка рыбы в аквариуме</a>
+                    <span class="clothing__price">899 ₴</span>
                 </li>
               </ul>
             <div>
@@ -61,16 +85,16 @@
             </div>        
              <ul>
                 <li>
-                    <img src="/images/baner.jpg" alt="Одежда" width="1141" height="512">
+                    <img class="clothes__image" src="/images/baner.jpg" alt="Фото одежды" width="1141" height="512">
                 </li>  
              </ul>
             <div>
-                <h2>Booriva Store</h2>
+                <h2 class="address">Booriva Store</h2>
             </div>
              <ul>
                 <li>
-                    <img src="/images/Rectangle47.jpg" alt="Booriva" width="560" height="643">
-                    <img src="/images/Rectangle88.png" alt="Map" width="273" height="246">
+                    <img class="address__image" src="/images/Rectangle47.jpg" alt="Booriva" width="560" height="643">
+                    <img class="address__image" src="/images/Rectangle88.png" alt="Map" width="273" height="246">
                 </li>
              </ul>
             <div>
@@ -78,11 +102,11 @@
             </div> 
              <ul>
                  <li>
-                     <img src="/images/creeping_line.jpg" alt="Топовые товары" width="1913" height="80">
-                     <img src="/images/banner.jpg" alt="I feel" width="466" height="600">
-                     <img src="/images/gonecrazymini.jpg" alt="Бомбер Gone Grazy" width="274" height="300">
-                     <img src="/images/t-shirt_dress_fish_mini.jpg" alt="Платье-футболка рыбы в аквариуме" width="274" height="300">
-                     <img src="/images/dressflowerblackmini.jpg" alt="Платье прозрачное в цветочек черное" width="370" height="600">
+                     <img class="line__image" src="/images/creeping_line.jpg" alt="Бегущая строка" width="1913" height="80">
+                     <img class="clothes__image" src="/images/banner.jpg" alt="Фото одежды" width="466" height="600">
+                     <img class="clothes__image" src="/images/gonecrazymini.jpg" alt="Фото одежды" width="274" height="300">
+                     <img class="clothes__image" src="/images/t-shirt_dress_fish_mini.jpg" alt="Фото одежды" width="274" height="300">
+                     <img class="clothes__image" src="/images/dressflowerblackmini.jpg" alt="Фото одежды" width="370" height="600">
                  </li>
              </ul>
             <div>
@@ -91,14 +115,14 @@
         </section>
         <section>
             <div class="costumes">
-                <h3>Костюмы</h3>
+                <h3 class="costumes__title">Костюмы</h3>
             </div>
              <ul>
                  <li>
-                     <img src="/images/cards.jpg" alt="Карточки" width="1440" height="530">
-                     <img src="/images/ytp.png" alt="Отправка, возврат" width="1139" height="100">
-                     <img src="/images/insta.png" alt="Инст" width="1141" height="388">
-                     <img src="/images/footerfull.jpg" alt="Конец" width="1140" height="247">
+                     <img class="clothes__image" src="/images/cards.jpg" alt="Фото одежды" width="1440" height="530">
+                     <img class="shipping__image" src="/images/ytp.png" alt="Отправка, возврат" width="1139" height="100">
+                     <img class="socialnetwork__image" src="/images/insta.png" alt="Инст" width="1141" height="388">
+                     <img class="end__image" src="/images/footerfull.jpg" alt="Конец" width="1140" height="247">
                  </li>
              </ul>
             <div>
@@ -121,7 +145,7 @@
         <ul>
         <li><a href="#">Правовая оговорка</a></li>
         <li><a href="#">Пользовательское соглашение</a></li>
-        <li><a href="#">Политика конфидециальности</a></li>
+        <li><a href="#">Политика конфиденциальности</a></li>
         </ul>
     </footer>
 </body>
