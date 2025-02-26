@@ -17,16 +17,16 @@
                     <a class="menu__link" href="#"><img src="images/fluent_location.png" alt=""> Адрес</a>
                 </li>
                 <li class="menu__item">
-                    <a class="menu__link" href="#"><img src="images/icons8_iphone.png" alt="">Телефон</a>
+                    <a class="menu__link" href="#"><img src="images/icons_iphone.png" alt="">Телефон</a>
                 </li>
                 <li class="menu__item">
-                    <a class="menu__link" href="#"><img src="images/ri_search-2-line.png" alt="">Поиск</a>
+                    <a class="menu__link" href="#"><img src="images/ri_search.png" alt="">Поиск</a>
                 </li>
                 <li class="menu__item">
                     <a class="menu__link" href="#"><img src="images/icons_heart.png" alt="">Понравившееся</a>
                 </li>
                 <li class="menu__item">
-                    <a class="menu__link" href="#"><img src="images/icons_shopping-bag.png" alt="">Корзина</a>
+                    <a class="menu__link" href="#"><img src="images/shoppingbag.png" alt="">Корзина</a>
                 </li>
                 <li class="menu__item menu__item--active">
                     <a class="menu__link" href="index.html">Новинки</a>
@@ -53,70 +53,78 @@
         </nav>
     </header> 
     <main class="main container">
-        <figure>
-                <img src="/images/category.png" alt="Одежда" width="1140" height="656">
+        <figure class="clothes__figure"> 
+                <img class="clothes__image" src="/images/category.png" alt="Одежда" width="1140" height="656">
         </figure>
-        <section>
-            <div class="new"> 
-                <h2 class="new__title">Новинки</h2>
+        <section class="clothes">
+            <div class="clothes__div"> 
+                <h2 class="clothes__new">Новинки</h2>
             </div>
-             <ul>
-                <li>
-                    <img class="clothes__image" src="/images/CardM.png" alt="Фото одежды" width="360" height="530">
-                    <a class="clothing__name" href="#">Свитшот вставка клетка</a>
-                    <span class="clothing__price">1099 ₴</span>
+             <ul class="clothes__assortment">
+                <li class="clothes__product">
+                    <img class="clothes__image" src="/images/blue_sweatshirt.png" alt="Фото одежды" width="360" height="530">
+                    <a class="clothes__name" href="#">Свитшот вставка клетка</a>
+                    <span class="clothes__price">1099 ₴</span>
                 </li>
-                <li>
+                <li class="clothes__product">
                     <img class="clothes__image" src="/images/dress_in_flowers.png" alt="Фото одежды" width="360" height="530">
-                    <a class="clothing__name" href="#">Платье прозрачное в цветочек черное</a>
-                    <span class="clothing__price">1299 ₴</span>
+                    <a class="clothes__name" href="#">Платье прозрачное в цветочек черное</a>
+                    <span class="clothes__price">1299 ₴</span>
                 </li>
-                <li>
+                <li class="clothes__product">
                     <img class="clothes__image" src="/images/bomber.png" alt="Фото одежды" width="360" height="530">
-                    <a class="clothing__name" href="#">Бомбер Gone Crazy хаки</a>
-                    <span class="clothing__price">2499 ₴</span>
+                    <a class="clothes__name" href="#">Бомбер Gone Crazy хаки</a>
+                    <span class="clothes__price">2499 ₴</span>
                 </li>
-                <li>
-                    <img class="clothes__image" src="/images/dress_t-shirt_fish.png" alt="Фото одежды" width="360" height="530">
-                    <a class="clothing__name" href="#">Платье-футболка рыбы в аквариуме</a>
-                    <span class="clothing__price">899 ₴</span>
+                <li class="clothes__product">
+                    <img class="clothes__image" src="/images/dress_tshirt_fish.png" alt="Фото одежды" width="360" height="530">
+                    <a class="clothes__name" href="#">Платье-футболка рыбы в аквариуме</a>
+                    <span class="clothes__price">899 ₴</span>
                 </li>
-              </ul>
-            <div>
+             </ul>
                 <button class="main__button button">Смотреть все</button>
-            </div>        
-             <ul>
-                <li>
-                    <img class="clothes__image" src="/images/baner.jpg" alt="Фото одежды" width="1141" height="512">
-                </li>  
-             </ul>
-            <div>
-                <h2 class="address">Booriva Store</h2>
+        </section>   
+        <section class="collection">
+            <ul class="collection__baner">
+                    <img class="collection__image" src="/images/baner.jpg" alt="Фото одежды" width="1141" height="512">
+            </ul>
+        </section>
+        <section class="address">
+            <div class="address__div">
+                <h2 class="address__title">Booriva Store</h2>
             </div>
-             <ul>
-                <li>
-                    <img class="address__image" src="/images/Rectangle47.jpg" alt="Booriva" width="560" height="643">
-                    <img class="address__image" src="/images/Rectangle88.png" alt="Map" width="273" height="246">
+             <ul class="address__location">
+                <li class="address__images">
+                    <img class="address__image" src="/images/store_door.jpg" alt="Booriva" width="560" height="643">
+                    <img class="address__image" src="/images/map.png" alt="Map" width="273" height="246">
                 </li>
              </ul>
-            <div>
+            <div class="button__address">
                 <button class="address__button button">Проложить маршрут</button>
             </div> 
-             <ul>
-                 <li>
-                     <img class="line__image" src="/images/creeping_line.jpg" alt="Бегущая строка" width="1913" height="80">
-                     <img class="clothes__image" src="/images/banner.jpg" alt="Фото одежды" width="466" height="600">
-                     <img class="clothes__image" src="/images/gonecrazymini.jpg" alt="Фото одежды" width="274" height="300">
-                     <img class="clothes__image" src="/images/t-shirt_dress_fish_mini.jpg" alt="Фото одежды" width="274" height="300">
-                     <img class="clothes__image" src="/images/dressflowerblackmini.jpg" alt="Фото одежды" width="370" height="600">
+        </section>
+        <section class="top">
+             <ul class="top__assortment">
+                 <li class="top__creepingline">
+                     <img class="top__line" src="/images/creeping_line.jpg" alt="Бегущая строка" width="1913" height="80">
+                 </li>
+                 <li class="top__product">
+                     <img class="top__first" src="/images/banner.jpg" alt="Фото одежды" width="466" height="600">
+                 </li>
+                 <li class="top__product">
+                     <img class="top__second" src="/images/gonecrazymini.jpg" alt="Фото одежды" width="274" height="300">
+                 </li> 
+                 <li class="top__product">  
+                     <img class="top__third" src="/images/tshirt_dress_fish_mini.jpg" alt="Фото одежды" width="274" height="300">
+                 </li>
+                 <li class="top__product">
+                     <img class="top__fourth" src="/images/dressflowerblackmini.jpg" alt="Фото одежды" width="370" height="600">
                  </li>
              </ul>
-            <div>
-                <button class="main__button button">Смотреть все</button>
-            </div> 
+                <button class="main__button button">Смотреть все</button> 
         </section>
-        <section>
-            <div class="costumes">
+        <section class="costumes">
+            <div class="costumes__div">
                 <h3 class="costumes__title">Костюмы</h3>
             </div>
              <ul>
@@ -127,9 +135,7 @@
                      <img class="end__image" src="/images/footerfull.jpg" alt="Конец" width="1140" height="247">
                  </li>
              </ul>
-            <div>
                 <button class="main__button button">Смотреть все</button>
-            </div>
         </section>
         
         <section>
