@@ -53,9 +53,14 @@
         </nav>
     </header> 
     <main class="main container">
-        <figure class="clothes__figure"> 
-                <img class="clothes__image" src="/images/category.png" alt="Одежда" width="1140" height="656">
-        </figure>
+        <section class="categories"> 
+                <img class="categories__image" src="/images/tshirts.jpg" alt="Футболки" width="563" height="345">
+                <img class="categories__image" src="/images/bottom.jpg" alt="Низ" width="274" height="296">
+                <img class="categories__image" src="/images/top.jpg" alt="Верх" width="274" height="296">
+                <img class="categories__image" src="/images/dresses.jpg" alt="Платья" width="273" height="296">
+                <img class="categories__image" src="/images/costumes.jpg" alt="Костюмы" width="274" height="296">
+                <img class="categories__image" src="/images/hoodie.jpg" alt="Худи" width="563" height="345">
+        </section> 
         <section class="clothes">
             <div class="clothes__div"> 
                 <h2 class="clothes__new">Новинки</h2>
@@ -99,7 +104,7 @@
                     <img class="address__image" src="/images/map.png" alt="Map" width="273" height="246">
                 </li>
              </ul>
-            <div class="button__address">
+            <div class="address__button">
                 <button class="address__button button">Проложить маршрут</button>
             </div> 
         </section>
@@ -127,20 +132,58 @@
             <div class="costumes__div">
                 <h3 class="costumes__title">Костюмы</h3>
             </div>
-             <ul>
-                 <li>
-                     <img class="clothes__image" src="/images/cards.jpg" alt="Фото одежды" width="1440" height="530">
-                     <img class="shipping__image" src="/images/ytp.png" alt="Отправка, возврат" width="1139" height="100">
-                     <img class="socialnetwork__image" src="/images/insta.png" alt="Инст" width="1141" height="388">
-                     <img class="end__image" src="/images/footerfull.jpg" alt="Конец" width="1140" height="247">
+             <ul class="costumes__block">
+                 <li class="costumes__images">
+                     <img class="costumes__image" src="/images/beige_set.jpg" alt="Бежевый комплект" width="360" height="530">
+                     <img class="costumes__image" src="/images/gray_set_with_panama.jpg" alt="Серый комплект" width="360" height="530">
+                     <img class="costumes__image" src="/images/zebra_set.jpg" alt="Комплект зебра" width="360" height="530">
+                     <img class="costumes__image" src="/images/black_set.jpg" alt="Черный комплект" width="360" height="530">
                  </li>
              </ul>
                 <button class="main__button button">Смотреть все</button>
         </section>
-        
-        <section>
+        <section class="information">
+            <ul class="information__block">
+                <li class="information__images">
+                    <img class="information__image" src="/images/sending.png" alt="Кошка в плаще" width="81" height="98">
+                    <h3 class="information__title">Отправка день в день</h3>
+                    <p class="information__description">ПРИ ЗАКАЗЕ ДО 18:00</p>
+                </li>
+                <li class="information__images">
+                    <img class="information__image" src="/images/exchange.png" alt="Коробка с крыльями" width="81" height="98">
+                    <h3 class="information__title">Легкий возврат/обмен</h3>
+                    <p class="information__description">В ТЕЧЕНИЕ 14 ДНЕЙ</p>
+                </li>
+                <li class="information__images">
+                    <img class="information__image" src="/images/heart_needles.png" alt="Сердце с иголками" width="81" height="98">
+                    <h3 class="information__title">Сделано в Украине</h3>
+                    <p class="information__description">ПРЯМ В КИЕВЕ</p>
+                </li>
+            </ul>
+        </section>
+        <section class="socialnetwork">
+            <ul class="socialnetwork__block">
+                <li class="socialnetwork__images">
+                    <img class="socialnetwork__image" src="/images/long_shirt.jpg" alt="Длинная рубашка" width="205" height="205">
+                    <img class="socialnetwork__image" src="/images/coat.jpg" alt="Пальто" width="168" height="168">
+                    <h3 class="socialnetwork__title">INSTAGRAM</h3>
+                    <p class="socialnetwork__description">Мы в экстазе, когда ты нас отмечаешь</p>
+                    <p class="socialnetwork__description">Отмечай плз чаще</p>
+                </li>
+                <li class="socialnetwork__images">
+                    <img class="socialnetwork__image" src="/images/pink_hoodie.jpg" alt="Розовое худи" width="370" height="370">
+                </li>
+                <li class="socialnetwork__images">
+                    <img class="socialnetwork__image" src="/images/hanger.jpg" alt="Вешалка" width="168" height="168">
+                    <img class="socialnetwork__image" src="/images/green_coat.jpg" alt="Зеленое пальто" width="205" height="205">
+                    <p class="socialnetwork__title">#BOORIVAGIRLS</p>
+                    <p class="socialnetwork__description">Ставь тэг чтобы быть в нашей тусовке</p>
+                </li>
+            </ul>
+        </section>
+        <section class="basket">
             <form action="/">
-                <h1 class="basket__image">Корзина</h1>
+                <h3 class="basket__image">Корзина</h3>
                 <input type="text" name="name" placeholder="Имя" required>
                 <input type="text" name="surname" placeholder="Фамилия" required>
                 <input type="tel" name="phone" placeholder="Номер телефона" required> 
@@ -150,10 +193,26 @@
     </main>
     <footer class="footer container">
         <p>Сайт создан Лемякиной Марией группа СТ-21</p>
-        <ul>
-        <li><a href="#">Правовая оговорка</a></li>
-        <li><a href="#">Пользовательское соглашение</a></li>
-        <li><a href="#">Политика конфиденциальности</a></li>
+        <div class="footer__div"> 
+            <h2 class="footer__title">Booriva</h2>
+        </div>
+        <ul class="footer__categories">
+            <li class="footer__info">
+                <p class="footer__title">ИНФО</p>
+                <li class="footer__contacts"><a href="#">Контакты</a></li>
+                <li class="footer__system"><a href="#">Система лояльности</a></li>
+                <li class="footer__exchange"><a href="#">Обмен и возврат</a></li>
+            </li>
+            <li class="footer__address">
+                <p class="footer__title">НАШ АДРЕС</p>
+                <p class="footer__location">г.Киев, ул. Нижний Вал, 37</p>
+                <p class="footer__hours">Пн — Вс: с 11:00 до 21:00</p>
+            </li>
+            <li class="footer__socialnetworks">
+                <p class="footer__title">СОЦ.СЕТИ</p>
+                <a class="footer__link" href="#"><img src="images/logo_inst.png" alt="">Инста</a>
+                <a class="footer__link" href="#"><img src="images/logo_facebook.png" alt="">Фейсбук</a>
+            </li>
         </ul>
     </footer>
 </body>
