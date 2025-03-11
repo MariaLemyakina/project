@@ -5,13 +5,25 @@
     display: flex;
     flex-wrap: wrap;
    }
-   .menu__link{
+.menu__link{
     display: block;
     padding: 10px;
     margin: 5px;
     background-color: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
     text-decoration: none;
+   }
+.header__logo-wrap{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+   }
+.header__logo-wrap{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+   }
+   .header__title{
+    margin: 0;
    }
    
    
