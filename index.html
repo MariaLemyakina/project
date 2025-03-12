@@ -9,27 +9,21 @@
 </head>
 <body>
     <header class="header container"> 
+    <div class="header__info">
+        <a class="menu__link" href="#"><img src="images/fluent_location.png" alt="">Киев, Нижний вал, 37</a>
+        <a class="menu__link" href="#"><img src="images/icons_iphone.png" alt="">+38 063 843 34 71</a>   
+    </div>
     <a class="header__logo-wrap" href="index.html">
         <img class="header__logo" src="images/logo.svg" alt="Логотип" width="159" height="40">
-        <h1 class="header__title">Booriva</h1>
+        <h1 class="header__title"></h1>
     </a>
+    <div class="header__buttons">
+        <a class="menu__link" href="#"><img src="images/ri_search.png" alt="">Поиск</a>
+        <a class="menu__link" href="#"><img src="images/icons_heart.png" alt="">Понравившееся</a>
+        <a class="menu__link" href="#"><img src="images/shoppingbag.png" alt="">Корзина</a>
+    </div>
         <nav class="header__menu">
             <ul class="menu">
-                <li class="menu__item">
-                    <a class="menu__link" href="#"><img src="images/fluent_location.png" alt=""> Адрес</a>
-                </li>
-                <li class="menu__item">
-                    <a class="menu__link" href="#"><img src="images/icons_iphone.png" alt="">Телефон</a>
-                </li>
-                <li class="menu__item">
-                    <a class="menu__link" href="#"><img src="images/ri_search.png" alt="">Поиск</a>
-                </li>
-                <li class="menu__item">
-                    <a class="menu__link" href="#"><img src="images/icons_heart.png" alt="">Понравившееся</a>
-                </li>
-                <li class="menu__item">
-                    <a class="menu__link" href="#"><img src="images/shoppingbag.png" alt="">Корзина</a>
-                </li>
                 <li class="menu__item menu__item--active">
                     <a class="menu__link" href="index.html">Новинки</a>
                 </li>
@@ -51,6 +45,9 @@
                 <li class="menu__item">
                     <a class="menu__link" href="#">Костюмы</a>
                 </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="#">#BoorivaGirls</a>
+                </li>
             </ul>
         </nav>
     </header> 
@@ -59,12 +56,32 @@
             <div class="categories__div"> 
                 <h2 class="categories__title">Категории товаров</h2>
             </div>
-                <img class="categories__image" src="images/tshirts.jpg" alt="Футболки" width="563" height="345">
-                <img class="categories__image" src="images/bottom.jpg" alt="Низ" width="274" height="296">
-                <img class="categories__image" src="images/top.jpg" alt="Верх" width="274" height="296">
-                <img class="categories__image" src="images/dresses.jpg" alt="Платья" width="273" height="296">
-                <img class="categories__image" src="images/costumes.jpg" alt="Костюмы" width="274" height="296">
-                <img class="categories__image" src="images/hoodie.jpg" alt="Худи" width="563" height="345">
+            <ul>
+                <li> 
+                    <img class="categories__image" src="images/tshirts.jpg" alt="Футболки" width="563" height="345">
+                    <button class="main__button button" type="button">Футболки</button>
+                </li>
+                <li>
+                    <img class="categories__image" src="images/bottom.jpg" alt="Низ" width="274" height="296">
+                    <button class="main__button button" type="button">Низ</button>
+                </li>
+                <li>
+                    <img class="categories__image" src="images/top.jpg" alt="Верх" width="274" height="296">
+                    <button class="main__button button" type="button">Верх</button>
+                </li>
+                <li>
+                    <img class="categories__image" src="images/dresses.jpg" alt="Платья" width="273" height="296">
+                    <button class="main__button button" type="button">Платья</button>
+                </li>
+                <li>
+                    <img class="categories__image" src="images/costumes.jpg" alt="Костюмы" width="274" height="296">
+                    <button class="main__button button" type="button">Костюмы</button>
+                </li>
+                <li>
+                    <img class="categories__image" src="images/hoodie.jpg" alt="Худи" width="563" height="345">
+                    <button class="main__button button" type="button">Худи</button>
+                </li>
+            </ul>
         </section> 
         <section class="clothes">
             <div class="clothes__div"> 
