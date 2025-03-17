@@ -4,6 +4,7 @@
     list-style-type: none;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
    }
 .menu__link{
     display: block;
@@ -12,6 +13,7 @@
     background-color: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
     text-decoration: none;
+    list-style-type: none;
    }
 .header__logo-wrap{
     display: flex;

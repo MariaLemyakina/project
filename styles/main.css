@@ -1,0 +1,26 @@
+.categories__list{
+display: flex;
+flex-wrap: wrap;
+list-style-type: none; /*чтобы убрать точки и отступы*/
+margin: 0;
+padding: 0;
+width: 1140px;
+gap: 14px;
+}
+.categories__rectangle{
+    width: 563px;
+    position: relative;
+}
+.categories__square{
+    width: 273px;
+    position: relative;
+}
+.categories__image{
+    height: 296px;
+}
+.categories__button{
+    font-family: 'sundaybestrusbyalince', Arial, sans-serif;
+    position: absolute;
+    bottom: 19px;
+    left: 22px;
+}
