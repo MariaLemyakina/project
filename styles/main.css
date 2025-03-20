@@ -6,6 +6,8 @@ margin: 0;
 padding: 0;
 width: 1140px;
 gap: 14px;
+margin-right: auto;
+margin-left:  auto;
 }
 .categories__rectangle{
     width: 563px;
@@ -20,7 +22,52 @@ gap: 14px;
 }
 .categories__button{
     font-family: 'sundaybestrusbyalince', Arial, sans-serif;
+    font-size: 20px;
     position: absolute;
     bottom: 19px;
     left: 22px;
+    list-style-type: none;
+}
+.clothes__assortment{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+.collection__image{
+    margin-right: auto;
+    margin-left:  auto;
+}
+.collection__element{
+    list-style-type: none;
+}
+.address__location{
+    list-style-type: none;
+}
+.clothes__button{
+    font-family: 'sundaybestrusbyalince', Arial, sans-serif;
+    font-size: 14px;
+    text-align: center;
+    margin-right: auto;
+    margin-left:  auto;
+    display: block;
+    padding: 15px 30px;
+}
+.clothes__image{
+    border-bottom: 2px solid #FDA3C4;
+
+}
+.clothes__wrap{
+    display: grid;
+    grid-template-columns: minmax(250px, 300px) 101px;
+    margin-top: 24px;
+}
+.clothes__price{
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 100%;
+    color: #FDA3C4;
+}
+.clothes__product{
+    padding: 0 20px;
 }
