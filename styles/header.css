@@ -15,6 +15,15 @@
     text-decoration: none;
     list-style-type: none;
    }
+.header__link{
+    display: block;
+    padding: 10px;
+    margin: 5px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    list-style-type: none;
+   }
 .header__logo-wrap{
     display: flex;
     align-items: center;
@@ -54,4 +63,3 @@
     align-items: center;
     gap: 10px;
 }  
-   

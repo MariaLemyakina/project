@@ -21,7 +21,7 @@ margin-left:  auto;
     height: 296px;
 }
 .categories__button{
-    font-family: 'sundaybestrusbyalince', Arial, sans-serif;
+    font-family: 'Sunday-Regular', Arial, sans-serif;
     font-size: 20px;
     position: absolute;
     bottom: 19px;
@@ -44,7 +44,7 @@ margin-left:  auto;
     list-style-type: none;
 }
 .clothes__button{
-    font-family: 'sundaybestrusbyalince', Arial, sans-serif;
+    font-family: 'Sunday-Regular', Arial, sans-serif;
     font-size: 14px;
     text-align: center;
     margin-right: auto;
@@ -71,3 +71,57 @@ margin-left:  auto;
 .clothes__product{
     padding: 0 20px;
 }
+.collection{
+    margin-top: 60px;
+}
+.clothes{
+    margin-top: 60px;
+}
+
+/**/
+.address {
+    position: relative; 
+    margin-top: 56px; 
+    text-align: center; 
+}
+  
+.address__div {
+    margin-bottom: 20px; 
+  }
+  
+.address__title {
+    font-family: 'Sunday-Regular', Arial, sans-serif;
+    font-size: 54px;
+}
+  
+.address__location {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+  
+.address__images {
+    display: flex; 
+    justify-content: center; 
+    align-items: flex-start;
+    position: relative; 
+}
+  
+.address__image {
+    object-fit: cover; 
+    margin: 0 10px; 
+}
+  
+  
+.address__button {
+    margin-top: 20px;
+}
+  
+.address__button button {
+    font-family: 'Sunday-Regular', Arial, sans-serif;
+    font-size: 14px;
+    text-align: center;
+    padding: 15px 30px;
+}
+
+  /**/
