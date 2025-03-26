@@ -85,7 +85,10 @@
         </section> 
         <section class="clothes">
             <div class="clothes__div"> 
-                <h2 class="clothes__new">Новинки</h2>
+                <h2 class="clothes__new">
+                    Новинки
+                    <div class="clothes__newsub">НОВИНКИ</div>
+                </h2>
             </div>
              <ul class="clothes__assortment">
                 <li class="clothes__product">
@@ -98,7 +101,7 @@
                 <li class="clothes__product">
                     <img class="clothes__image" src="images/dress_in_flowers.png" alt="Фото одежды" width="360" height="530">
                     <div class="clothes__wrap">
-                        <a class="clothes__name" href="#">Платье прозрачное в цветочек черное</a>
+                        <a class="clothes__name" href="#">Платье прозрачное <br> в цветочек черное</a>
                         <span class="clothes__price">1299 ₴</span>
                     </div>
                 </li>
@@ -133,38 +136,60 @@
             <div class="address__div">
                 <h2 class="address__title">Booriva Store</h2>
             </div>
-             <ul class="address__location">
-                <li class="address__images">
-                    <img class="address__image" src="images/store_door.jpg" alt="Booriva" width="560" height="643">
-                    <img class="address__image" src="images/map.jpg" alt="Map" width="273" height="246">
-                </li>
-             </ul>
+                <p class="address__address">
+                    г.Киев,  ул. Нижний вал, 37 <br>
+                    Ежедневно с 11:00 до 21:00
+                </p>
+                <img class="address__image" src="images/store_door.jpg" alt="Booriva" width="560" height="643">
+                <img class="address__map" src="images/map.jpg" alt="Map" width="273" height="246">
             <div class="address__button">
                 <button class="address__button button" type="button">Проложить маршрут</button>
             </div> 
         </section>
         <section class="top">
             <div class="top__div"> 
-                <h2 class="top__title">Топовые товары</h2>
+                <h2 class="top__title visually-hidden">Топовые товары</h2>
             </div>
+            <img class="top__line" src="images/creeping_line.jpg" alt="Бегущая строка" width="1913" height="80">
              <ul class="top__assortment">
-                 <li class="top__creepingline">
-                     <img class="top__line" src="images/creeping_line.jpg" alt="Бегущая строка" width="1913" height="80">
-                 </li>
-                 <li class="top__product">
-                     <img class="top__first" src="images/banner.jpg" alt="Фото одежды" width="466" height="600">
-                 </li>
-                 <li class="top__product">
-                     <img class="top__second" src="images/gonecrazymini.png" alt="Фото одежды" width="274" height="300">
+                 <li class="top__first">
+                     <img class="top__image" src="images/gonecrazymini.png" alt="Фото одежды" width="274" height="300">
+                     <div class="top__wrap">
+                        <div class="top__element">
+                            <a class="top__name" href="#">Бомбер Gone Crazy хаки</a>
+                        </div>
+                        <div class="top__meaning">
+                            <span class="top__price">2499 ₴</span>
+                        </div>
+                    </div>
                  </li> 
-                 <li class="top__product">  
-                     <img class="top__third" src="images/tshirt_dress_fish_mini.png" alt="Фото одежды" width="274" height="300">
+                 <li class="top__second">  
+                     <img class="top__image" src="images/tshirt_dress_fish_mini.png" alt="Фото одежды" width="274" height="300">
+                     <div class="top__wrap">
+                        <div class="top__element">
+                            <a class="top__name" href="#">Платье-футболка рыбы в аквариуме</a>
+                        </div>
+                        <div class="top__meaning">
+                            <span class="top__price">899 ₴</span>
+                        </div>
+                    </div>
                  </li>
-                 <li class="top__product">
-                     <img class="top__fourth" src="images/dressflowerblackmini.png" alt="Фото одежды" width="370" height="600">
+                 <li class="top__third">
+                    <img class="top__baner" src="images/banner.jpg" alt="Фото одежды" width="466" height="600">
+                </li>
+                 <li class="top__fourth">
+                     <img class="top__image" src="images/dressflowerblackmini.png" alt="Фото одежды" width="370" height="600">
+                     <div class="top__wrap">
+                        <div class="top__bigelement">
+                            <a class="top__name" href="#">Платье прозрачное <br> в цветочек черное</a>
+                        </div>
+                        <div class="top__bigmeaning">
+                            <span class="top__price">1299 ₴</span>
+                        </div>
+                    </div>
                  </li>
              </ul>
-                <button class="main__button button" type="button">Смотреть все</button> 
+                <button class="top__button buttton" type="button">Смотреть все</button> 
         </section>
         <section class="costumes">
             <div class="costumes__div">
@@ -173,10 +198,16 @@
              <ul class="costumes__block">
                  <li class="costumes__images">
                      <img class="costumes__image" src="images/beige_set.jpg" alt="Бежевый комплект" width="360" height="530">
+                </li>
+                <li class="costumes__images">
                      <img class="costumes__image" src="images/gray_set_with_panama.jpg" alt="Серый комплект" width="360" height="530">
+                </li>
+                <li class="costumes__images">
                      <img class="costumes__image" src="images/zebra_set.jpg" alt="Комплект зебра" width="360" height="530">
+                </li>
+                <li class="costumes__images">
                      <img class="costumes__image" src="images/black_set.jpg" alt="Черный комплект" width="360" height="530">
-                 </li>
+                </li>
              </ul>
                 <button class="main__button button" type="button">Смотреть все</button>
         </section>

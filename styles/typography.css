@@ -16,3 +16,15 @@
      background-image: url("../images/pink_background.png");
      cursor: pointer; 
 }
+.buttton{
+    font-family: 'Sunday-Regular', Arial, sans-serif;
+    font-size: 14px; 
+    font-weight: 400;
+    color: #FFFFFF; 
+    background-color: transparent;
+    background-size: 100% 100%;
+    border: 0; 
+    border-radius: 8px; 
+    padding: 12px 18px; 
+    background-image: url("../images/red_background.png");
+    cursor: pointer; 
