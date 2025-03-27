@@ -4,27 +4,24 @@
     margin: 0 auto;
 }
 
-.button { 
-     font-size: 14px; 
-     font-weight: 400;
-     color: #FFFFFF; 
-     background-color: transparent;
-     background-size: 100% 100%;
-     border: 0; 
-     border-radius: 8px; 
-     padding: 12px 18px; 
-     background-image: url("../images/pink_background.png");
-     cursor: pointer; 
-}
-.buttton{
-    font-family: 'Sunday-Regular', Arial, sans-serif;
-    font-size: 14px; 
+.button {
+    font-size: 14px;
     font-weight: 400;
-    color: #FFFFFF; 
+    color: #FFFFFF;
     background-color: transparent;
     background-size: 100% 100%;
-    border: 0; 
-    border-radius: 8px; 
-    padding: 12px 18px; 
+    border: 0;
+    border-radius: 8px;
+    padding: 12px 18px;
+    background-image: url("../images/pink_background.png");
+    cursor: pointer;
+    transition: background-image 0.2s ease;
+}
+
+.button:hover {
+   
+    color: #FFFFFF;
+ 
     background-image: url("../images/red_background.png");
-    cursor: pointer; 
+    cursor: pointer;
+}

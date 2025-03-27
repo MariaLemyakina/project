@@ -10,7 +10,7 @@
     }
 @font-face {
     font-family: "Montserrat";
-    src: url('../fonts/Montserrat-Bold.ttf') format('ttf');
+    src: url('../fonts/Montserrat-Bold.woff2') format('woff2');
     font-weight: bold;
     font-style: normal;
     font-display: swap;

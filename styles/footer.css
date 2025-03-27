@@ -1,3 +1,49 @@
 .footer {
     background-color: #FDA3C4;
+    display: flex;
+    gap: 110px;
+    width: 1440px;
+    height: 247px;
+}
+
+.footer__categories {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    gap: 110px;
+    margin-top: 60px;
+}
+
+.footer__list {
+    list-style-type: none;
+
+    margin: 0;
+    padding: 0;
+}
+
+.footer__list a {
+    text-decoration: none;
+    /* color: black; */
+}
+
+.footer__logo {
+    margin-top: 60px;
+}
+
+.footer__title {
+    font-family: 'Sunday-Regular', Arial, sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 100%;
+    color: #F40000;
+}
+
+.footer__text {
+    color: #FFFFFF;
+}
+
+.footer__wrapper {
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }

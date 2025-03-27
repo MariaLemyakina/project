@@ -1,0 +1,46 @@
+@media only screen and (max-width: 1024px) {
+
+    /*тут обращение к классам*/
+    .container {
+        max-width: 100%;
+    }
+
+    .clothes__assortment {
+        flex-wrap: wrap;
+    }
+    .address__title{
+        left: -30px;
+    }
+    .address__map {
+        bottom: -11px;
+        right: -91px;
+    }
+    .address__address {
+        color: #FFFFFF;
+        left: 72px;
+    }
+    .top__assortment {
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto auto ;
+
+    }
+  
+    .top__fourth {
+        grid-column: 1 / 3;
+        grid-row: 3 / 4;
+    }
+    .socialnetwork__block{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .information__block{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .footer{
+        gap: 70px;
+    }
+    .footer__categories{
+        gap: 30px;
+    }
+}
