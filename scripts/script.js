@@ -17,17 +17,23 @@ const intensiveImg = document.querySelector(".clothes__image");
 intensiveImg.addEventListener('mouseenter', () => {
 		console.log('Мышка наведена на изображение, показываем текст');
 });
+
+const intensiveImg1 = document.querySelectorAll('.clothes__image');
+
+intensiveImg1.forEach((item, index) => {
+		const intensiveText = document.querySelectorAll('.clothes__description');
+
+		item.addEventListener('mouseenter', () => {
+			item.style.opacity = 0.5;
+			intensiveText[index].removeAttribute('hidden');
+	});
+
+	item.addEventListener('mouseleave', () => {
+		item.style.opacity = 1;
+		intensiveText[index].setAttribute('hidden', true);
+		});
+	});
 });
 
 
-//Будущая разработка:
-//Обработка элементов одежды по нажатию на блок
-//let clothesElements = document.querySelectorAll('.clothes__product'); //get all elements
-//clothesElements.forEach(function(element)
-//{
-//	element.addEventListener('click', function()
-//	{
-//		//alert('clothes form'); Тут будет код ХТМЛ формы с описанием одежды
-//	});
-//});
 
