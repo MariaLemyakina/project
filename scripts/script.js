@@ -33,6 +33,21 @@ intensiveImg1.forEach((item, index) => {
 		intensiveText[index].setAttribute('hidden', true);
 		});
 	});
+
+
+	//Появление модального окна
+	const welcоmeButtonModal = document.querySelector(".clothes__button");
+	const modalApplication = document.querySelector(".watchall");
+	if (welcоmeButtonModal && modalApplication) {
+			welcоmeButtonModal.addEventListener("click", () => {
+				modalApplication.removeAttribute("hidden");
+			});
+		}
+		window.addEventListener("click", (event) => {
+			if (event.target === modalApplication) {
+				modalApplication.setAttribute("hidden", true);
+			}
+		});
 });
 
 
