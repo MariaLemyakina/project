@@ -431,6 +431,7 @@ margin-left:  auto;
     grid-row: 1/2;
     padding: 0 20px;
     margin-top: 50px;
+    transition: 0.3sease;
 }
 .watchall__productsecond{
     grid-column: 3/3;
@@ -515,8 +516,10 @@ margin-left:  auto;
 .watchall__close{
     position: absolute; /* позиционируется абсолютно*/
     border: 0;
+    cursor: pointer;
     top: 0; /* Элемент будет находиться на верхней границе родителя*/
     right: 0; /* элемент будет прижат к правой стороне родителя */
     padding: 10px; /* Внутренние отступы с каждой стороны 10px*/
     background-color: #ffffff
+    
 }

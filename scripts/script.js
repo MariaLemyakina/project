@@ -56,5 +56,18 @@ closeModalButton.addEventListener("click", () => {
 	});
 });
 
-
+const WatchallContainer = document.querySelector(".watchall");
+if (WatchallContainer) {
+	const dataTitleWatchall = [
+		"Нежно-розовое платье",
+		"Ярко-розовая футболка",
+		"Разноцветное платье",
+		"Рубашка с рыбами и небом",
+	];
+	const titleWatchall =
+		WatchallContainer.querySelectorAll(".watchall__name");
+	titleWatchall.forEach((item, index) => {
+	item.textContent = dataTitleWatchall[index];
+	});
+}
 
