@@ -33,21 +33,27 @@ intensiveImg1.forEach((item, index) => {
 		intensiveText[index].setAttribute('hidden', true);
 		});
 	});
+});
+
 
 
 	//Появление модального окна
-	const welcоmeButtonModal = document.querySelector(".clothes__button");
-	const modalApplication = document.querySelector(".watchall");
-	if (welcоmeButtonModal && modalApplication) {
-			welcоmeButtonModal.addEventListener("click", () => {
-				modalApplication.removeAttribute("hidden");
-			});
-		}
-		window.addEventListener("click", (event) => {
-			if (event.target === modalApplication) {
-				modalApplication.setAttribute("hidden", true);
-			}
+const welcоmeButtonModal = document.querySelector(".clothes__button");
+const modalApplication = document.querySelector(".watchall");
+if (welcоmeButtonModal && modalApplication) {
+		welcоmeButtonModal.addEventListener("click", () => {
+			modalApplication.removeAttribute("hidden");
 		});
+	}
+	//Закрытие модального окна
+window.addEventListener("click", (event) => {
+	if (event.target === modalApplication) {
+		modalApplication.setAttribute("hidden", true);
+	}
+const closeModalButton = document.querySelector(".watchall__close");
+closeModalButton.addEventListener("click", () => {
+	modalApplication.setAttribute("hidden", true);
+	});
 });
 
 

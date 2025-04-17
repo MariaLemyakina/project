@@ -487,12 +487,36 @@ margin-left:  auto;
     font-size: 24px;
     line-height: 100%;
     color: #FDA3C4;
+    width: 90px;
 }
 .watchall__name{
     font-family: 'Montserrat', Arial, sans-serif;
     font-weight: 600;
-    font-size: 16px;
+    font-size: 20px;
     text-decoration: 0;
     color: #1F1F1F;
     line-height: 20px;
+}
+.watchall__blockone{
+    display: grid;
+    grid-template-columns: minmax(220px, 300px) 70px;
+    margin-top: 24px;
+}
+.watchall__blocktwo{
+    display: grid;
+    grid-template-columns: minmax(220px, 300px) 70px;
+    margin-top: 53px;
+}
+.watchall__blockthree{
+    display: grid;
+    grid-template-columns: minmax(220px, 300px) 70px;
+    margin-top: 38px;
+}
+.watchall__close{
+    position: absolute; /* позиционируется абсолютно*/
+    border: 0;
+    top: 0; /* Элемент будет находиться на верхней границе родителя*/
+    right: 0; /* элемент будет прижат к правой стороне родителя */
+    padding: 10px; /* Внутренние отступы с каждой стороны 10px*/
+    background-color: #ffffff
 }
