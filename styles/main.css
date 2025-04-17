@@ -91,7 +91,6 @@ margin-left:  auto;
     text-decoration: 0;
     color: #1F1F1F;
     line-height: 20px;
-
 }
 .clothes__new{
     font-family: 'Sunday-Regular', Arial, sans-serif;
@@ -381,20 +380,119 @@ margin-left:  auto;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);/* смещаем элемент относительно его текущего положения*/
-    width:1440px;/* Максимальная ширина окна */
-    height: 1300px;
+    height: 1330px;
     padding: 20px 20px; /* Внутренние отступы: 50px сверху и снизу, 20px слева и справа */
     display: flex; /*Используем flexbox для выравнивания*/
     justify-content: center; /* распределяем элементы по центру*/
-    align-items: center; /* выравнивание по вертикали */
-    column-gap: 30px; /* отступы между столбцами */
     background-color: #ffffff; /*фон модального окна*/
     color: #FDA3C4;
-    list-style-type: none;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto ;
+    list-style-type: none; /*чтобы убрать точки и отступы*/
+    margin: 0;
+    width: 1760px;
+    gap: 14px;
+    margin-right: auto;
+    margin-left:  auto;
 }
-.watchall__form{
-    width: 500px; /*устанавливаем ширину для формы*/
+.watchall__title{
+    font-family: 'Sunday-Regular', Arial, sans-serif;
+    font-weight: 700;
+    font-size: 43px;
+    line-height: 60px;
+    margin-top: 50px;
+    margin-left: 40px;
+}
+.watchall__imageheart{
+    position: absolute;
+    margin-top: -145px;
+    margin-left: 435px;
+}
+.watchall__textone{
+    font-family: 'Sunday-Regular', Arial, sans-serif;
+    font-weight: 700;
+    font-size: 53px;
+    color: #F40000;
+    margin-left: 335px;
+    margin-top: 70px;
+}
+.watchall__texttwo{
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 30px;
+    color: #1F1F1F;
+    margin-left: 30px;
+    margin-top: 40px;
+}
+.watchall__productfirst{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    padding: 0 20px;
+    margin-top: 50px;
+}
+.watchall__productsecond{
+    grid-column: 3/3;
+    grid-row: 1/2;
+    padding: 0 20px;
+    margin-top: 50px;
+}
+.watchall__productthird{
+    grid-column: 3/3;
+    grid-row: 2/2;
+    padding: 0 20px;
+}
+.watchall__productfourth{
+    grid-column: 2/3;
+    grid-row: 2/2;
+    padding: 0 20px;
+}
+.watchall__form {
+    position: absolute;
+    width: 750px; /*устанавливаем ширину для формы*/
+    height: 500px;
     display: flex; /*Используем flexbox для выравнивания формы в строку*/
     flex-direction: column;
     row-gap: 10px; /* отступы между строками */
+    margin-left: 30px;  
+    margin-top: -160px;  
+}
+
+.watchall__input{
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    height: 100px;
+    width: 800px;
+}
+
+.watchall__button{
+    font-family: 'Sunday-Regular', Arial, sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+    height: 100px;
+    width: 350px;
+    margin-left: 230px;
+    margin-top: 40px;
+}
+.watchall__imagecat{
+    position: absolute;
+    margin-top: 605px;
+    margin-left: 280px;
+}
+.watchall__price{
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 100%;
+    color: #FDA3C4;
+}
+.watchall__name{
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    text-decoration: 0;
+    color: #1F1F1F;
+    line-height: 20px;
 }
