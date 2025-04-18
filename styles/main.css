@@ -279,6 +279,22 @@ margin-left:  auto;
     display: block;
     padding: 15px 30px;
 }
+.costumes__titlesub{
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+    color: #1F1F1F;
+    position: absolute;
+    bottom: -28px;
+}
+.costumes__title{
+    font-family: 'Sunday-Regular', Arial, sans-serif;
+    font-weight: 400;
+    font-size: 54px;
+    line-height: 100%;
+    color: #FDA3C4;
+    position: relative;
+}
 .information{
     margin-top: 60px;
 }
@@ -415,16 +431,16 @@ margin-left:  auto;
     font-size: 53px;
     color: #F40000;
     margin-left: 335px;
-    margin-top: 70px;
+    margin-top: 110px;
 }
 .watchall__texttwo{
     font-family: 'Montserrat', Arial, sans-serif;
-    font-weight: 700;
-    font-size: 22px;
+    font-weight: 600;
+    font-size: 32px;
     line-height: 30px;
     color: #1F1F1F;
     margin-left: 30px;
-    margin-top: 40px;
+    margin-top: 60px;
 }
 .watchall__productfirst{
     grid-column: 2/3;
@@ -479,7 +495,7 @@ margin-left:  auto;
 }
 .watchall__imagecat{
     position: absolute;
-    margin-top: 605px;
+    margin-top: 625px;
     margin-left: 280px;
 }
 .watchall__price{
@@ -520,6 +536,5 @@ margin-left:  auto;
     top: 0; /* Элемент будет находиться на верхней границе родителя*/
     right: 0; /* элемент будет прижат к правой стороне родителя */
     padding: 10px; /* Внутренние отступы с каждой стороны 10px*/
-    background-color: #ffffff
-    
+    background-color: #ffffff 
 }

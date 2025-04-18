@@ -71,3 +71,54 @@ if (WatchallContainer) {
 	});
 }
 
+const clothesProduct = document.querySelector('.clothes');
+
+if (clothesProduct) {
+		const clothesList = clothesProduct.querySelector('.clothes__assortment');
+		const clothesProductData = {
+			product1: {
+				image: "images/blue_sweatshirt.png",
+				name: 'Свитшот вставка клетка',
+				price: '1099 ₴',
+				description: 'Представь себя, закутавшись в нее с хорошей книгой на диване или создавая смелый модный образ на улицах.',
+			},
+			product2: {
+				image: "images/dress_in_flowers.png",
+				name: 'Платье прозрачное <br> в цветочек черное',
+				price: '1299 ₴',
+				description: 'Платье идеально подходит для солнечного пикника, вечеринки в саду или просто любого случая.',
+			},
+			product3: {
+				image: "images/bomber.png",
+				name: 'Бомбер Gone Crazy хаки',
+				price: '2499 ₴',
+				description: 'Мягкая ткань, свободный крой и теплый наполнитель делают эту куртку идеальной для повседневной носки.',
+			},
+			product4: {
+				image: "images/dress_tshirt_fish.png",
+				name: 'Платье-футболка рыбы в аквариуме',
+				price: '899 ₴',
+				description: 'Яркий оранжевый цвет – хит сезона, а принт в стиле арт-деко добавит актуальности твоему образу.',
+			}
+		}
+		const createCard = (image, name, price, description) => {
+			const card = `
+			<li class="clothes__product">
+				<img class="clothes__image" src="${image}" alt="Фото одежды" width="360" height="530">
+				<div class="clothes__wrap">
+					<a class="clothes__name" href="#">${name}</a>
+					<span class="clothes__price">${price}</span>
+				</div>
+				<div class="clothes__description" hidden>${description}</div>
+			</li>
+		`;
+			return card;
+		}
+		for (const cardKey in clothesProductData) {
+			const card = clothesProductData[cardKey];
+			const cardElement = createCard(card.image, card.name, card.price, card.description);
+			clothesList.insertAdjacentHTML('beforeend', cardElement);
+		}
+	}
+
+
