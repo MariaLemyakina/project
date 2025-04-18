@@ -122,3 +122,52 @@ if (clothesProduct) {
 	}
 
 
+const headerMenu = document.querySelector('.header__menu');
+if (headerMenu){
+		const headerList = headerMenu.querySelector('.menu');
+
+		const menuData = {
+			link1: {
+				link: '#',
+				title: 'ПЛАТЬЯ',
+			},
+			link2: {
+				link: '#',
+				title: 'ВЕРХ',
+			},
+			ink3: {
+				link: '#',
+				title: 'НИЗ',
+			},
+			link4: {
+				link: '#',
+				title: 'КУРТКИ',
+			},
+			link5: {
+				link: '#',
+				title: 'МЕЛОЧИ',
+			},
+			link6: {
+				link: '#',
+				title: 'КОСТЮМЫ',
+			},
+			link7: {
+				link: '#',
+				title: 'BOORIVAGIRLS',
+			}
+		}
+
+				const createLink = (UrlLink, title) =>{
+			const link = `
+			<li class="menu__item"><a href="${UrlLink}" class="menu__link">${title}</a></li>
+			`;
+			return link;
+		}
+
+		for (const linkItem in menuData) {
+			const link = menuData[linkItem];
+			const linkIndex = createLink(link.UrlLink, link.title);
+			headerList.insertAdjacentHTML('beforeend', linkIndex);
+
+		}
+}
