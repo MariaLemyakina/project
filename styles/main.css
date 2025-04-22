@@ -448,6 +448,7 @@ margin-left:  auto;
     padding: 0 20px;
     margin-top: 50px;
     transition: 0.3sease;
+    height: 520px;
 }
 .watchall__productsecond{
     grid-column: 3/3;
@@ -538,3 +539,34 @@ margin-left:  auto;
     padding: 10px; /* Внутренние отступы с каждой стороны 10px*/
     background-color: #ffffff 
 }
+.images {
+    max-width: 1200px;   
+  }
+.images__list {
+    display: flex; /* Используем flexbox для выравнивания карточек в строку*/
+    justify-content: center; /* распределяем элементы по центру*/
+    list-style-type: none;
+    margin: 0; /*ставим в 0 пикселей внешние отступы*/
+    padding: 0; /*ставим в 0 пикселей внутренние отступы*/
+    margin-top: 60px;
+    }
+.images__title{
+    font-family: 'Sunday-Regular', Arial, sans-serif;
+    font-weight: 700;
+    font-size: 54px;
+    margin-top: 75px;
+    color: #FDA3C4;
+}
+.images__titlesub{
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+    color: #1F1F1F;
+    margin-top: 10px;
+}
+.images__picture {
+    width: 946px;  /* Или любое другое значение */
+    height: 460px; /* Автоматически подстраивать высоту */
+    display: block;
+    /* Другие стили по вашему желанию */
+  }

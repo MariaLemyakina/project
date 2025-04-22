@@ -171,3 +171,63 @@ if (headerMenu){
 
 		}
 }
+
+const cardsImages = document.querySelector(".images");
+const cardListImages = document.querySelector(".images__list");
+
+// 2. URL для запроса данных из JSON
+const apiUrl = "images.json";
+
+// 3. Функция для создания карточки
+const createCard = (imageUrl, imageAlt, imageWidth) => {
+  const cardElement = document.createElement("li");
+  cardElement.classList.add("images__item");
+
+  const image1 = document.createElement("img");
+  image1.classList.add("images__picture");
+  image1.src =  imageUrl[0]; 
+  image1.alt = imageAlt;
+  image1.width = imageWidth;
+
+  const image2 = document.createElement("img");
+  image2.classList.add("images__picture");
+  image2.src = imageUrl[1]; 
+  image2.alt = imageAlt;
+  image2.width = imageWidth;
+  image2.style.display = "none"; // Скрываем вторую картинку изначально
+
+  cardElement.appendChild(image1);
+  cardElement.appendChild(image2);
+
+  // 4. Добавляем обработчик клика на li
+  cardElement.addEventListener("click", () => {
+    if (image1.style.display === "none") {
+      image1.style.display = "block";
+      image2.style.display = "none";
+    } else {
+      image1.style.display = "none";
+      image2.style.display = "block";
+    }
+  });
+
+  return cardElement;
+};
+
+// 5. Получаем данные из JSON
+fetch(apiUrl)
+  .then((response) => response.json())
+  .then((images) => {
+    console.log(images);
+    console.log(typeof images);
+
+    // 6. Перебираем массив объектов и создаем карточки
+    images.forEach((item) => {
+      const cardElement = createCard(item.imageUrl, item.imageAlt, item.imageWidth);
+      cardListImages.insertAdjacentElement("beforeend", cardElement);
+    });
+  })
+  .catch((error) => {
+    console.error("Ошибка при получении данных:", error);
+  });
+
+	
