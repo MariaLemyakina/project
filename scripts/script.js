@@ -230,4 +230,20 @@ fetch(apiUrl)
     console.error("Ошибка при получении данных:", error);
   });
 
+
+  const preloader = document.querySelector(".preloader");
+  const content = document.querySelector(".content");
+  if (preloader&&content) {
+	  setTimeout(() => {
+		  // Скрываемпрелоадер
+		  preloader.style.opacity = "0";
+		  preloader.style.visibility = "hidden";
+
+		  // Показываемконтент
+		  content.style.display = "block";
+
+		  // Удаляемэлементиз DOM
+		  preloader.remove();
+	  }, 3000); // Задержка 3 секунды
+  }
 	
