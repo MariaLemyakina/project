@@ -35,10 +35,14 @@
 .header__logo-wrap{
     text-decoration: none;
     color: rgb(0, 0, 0);
+    margin-right: 40px;
    }
-   .header__title{
-    margin: 0;
-   }
+.header__buttons{
+    margin-right: 40px;
+}
+.header__title{
+margin: 0;
+}
 .header{
     display: flex;
     flex-wrap: wrap;
@@ -67,3 +71,32 @@
     align-items: center;
     gap: 10px;
 }  
+.header__login{
+    border-style: none;
+    width: 1px;
+    height: 1px;
+    background-color: rgb(255, 255, 255);
+    display: block;
+    padding: 10px;
+    margin: 5px;
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 100%;
+    color: #1F1F1F;
+    flex-shrink: 0;
+    position: absolute;
+    margin-left: 250px;
+    margin-top: 16px;
+    cursor: pointer;
+}
+
+.header__basket{
+    width: 24px;
+    height: 24px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    list-style-type: none;
+    margin-top: -20px;
+}

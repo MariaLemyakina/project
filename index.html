@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Booriva</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/style.css">
 </head>
@@ -30,7 +31,10 @@
             <div class="header__buttons">
                 <a class="header__link" href="#"><img src="images/ri_search.png" alt="">Поиск</a>
                 <a class="header__link" href="#"><img src="images/icons_heart.png" alt="">Понравившееся</a>
-                <a class="header__link" href="#"><img src="images/shoppingbag.png" alt="">Корзина</a>
+                <a class="header__basket" href="#"><img src="images/shoppingbag.png" alt=""></a>
+                <button class="header__login" type="button">
+                    Корзина
+                </button>
             </div>
             <nav class="header__menu">
                 <ul class="menu">
@@ -284,6 +288,69 @@
 
                 </ul>
             </section>
+            <section class="section card card--slider swiper">
+                <div class="card__list card__list--slider swiper-wrapper">
+                    <a class="card__item swiper-slide" href="#">
+                        <span class="card__icon">
+                            <img src="images/delivery.jpg" alt="Иконка" width="148" height="100">
+                        </span>
+                        <h3 class="card__title">Доставка</h3>
+                        <p class="card__description">Доставка осуществляется почтой день в день при заказе до 18:00</p>
+                    </a>
+                    <a class="card__item swiper-slide" href="#">
+                        <span class="card__icon">
+                            <img src="images/telephone.jpg" alt="Иконка" width="128" height="100">
+                        </span>
+                        <h3 class="card__title">Платеж</h3>
+                        <p class="card__description">Наложенный платеж дополнительно оплачивается 2% от суммы</p>
+                    </a>
+                    <a class="card__item swiper-slide" href="#">
+                        <span class="card__icon">
+                            <img src="images/balloon.jpg" alt="Иконка" width="94" height="99">
+                        </span>
+                        <h3 class="card__title">Курьер</h3>
+                        <p class="card__description">Стоимость курьерской доставки составляет <br> 50 грн</p>
+                    </a>
+                    <a class="card__item swiper-slide" href="#">
+                        <span class="card__icon">
+                            <img src="images/iphone.jpg" alt="Иконка" width="83" height="100">
+                        </span>
+                        <h3 class="card__title">Оплата</h3>
+                        <p class="card__description">При оплате онлайн никаких больше дополнительных процентов</p>
+                    </a>
+                    <a class="card__item swiper-slide" href="#">
+                        <span class="card__icon">
+                            <img src="images/return.jpg" alt="Иконка" width="112" height="99">
+                        </span>
+                        <h3 class="card__title">Обмен</h3>
+                        <p class="card__description">Вы легко можете обменять либо вернуть вещь в течение 14 дней после покупки</p>
+                    </a>
+                    <a class="card__item swiper-slide" href="#">
+                        <span class="card__icon">
+                            <img src="images/calendar.jpg" alt="Иконка" width="154" height="100"> 
+                        </span>
+                        <h3 class="card__title">Почта</h3>
+                        <p class="card__description">Вещи, которые вы отправляете нам,  мы забираем с почты 2 раза в неделю</p>
+                    </a>
+                    <a class="card__item swiper-slide" href="#">
+                        <span class="card__icon">
+                            <img src="images/ballonbox.jpg" alt="Иконка" width="98" height="99">
+                        </span>
+                        <h3 class="card__title">Отправка</h3>
+                        <p class="card__description">При обмене, мы отправляем вещь в тот же либо на следующий день</p>
+                    </a>
+                    <a class="card__item swiper-slide" href="#">
+                        <span class="card__icon">
+                            <img src="images/credit_card.jpg" alt="Иконка" width="118" height="99">
+                        </span>
+                        <h3 class="card__title">Возврат</h3>
+                        <p class="card__description">Деньги возвращаются в течение 5 рабочих дней, после того как забрали вещь с почты</p>
+                    </a>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </section>
             <section class="socialnetwork">
                 <h2 hidden>insta </h2>
                 <ul class="socialnetwork__block">
@@ -415,7 +482,67 @@
                 </div>           
             </section>
         </div>
+        <!-- Формы -->
+        <div class="dialog dialog--layout" hidden>
+            <div class="dialog__content">
+                <button class="okno__close" type="button" data-close><img src="images/close.png"
+                        alt="Закрыть окно" width="24" height="24"></button>
+                <!-- Форма "Войдите в профиль" -->
+                <section class="okno" id="okno-select">
+                    <h2 class="okno__title">Войдите в профиль</h2>
+                    <p class="okno__desc">Добавлять товары в корзину могут только зарегистрированные пользователи.</p>
+                    <div class="okno__buttons">
+                        <button class="button button--accent" type="button" data-login>Войти</button>
+                        <button class="button" type="button" data-registration>Регистрация</button>
+                    </div>
+                </section>
+                <!--/ Форма "Войдите в профиль" -->
+                <!-- Форма "Регистрация" -->
+                <section class="okno" id="okno-registration" hidden>
+                    <h2 class="okno__title okno__title--registration">Регистрация</h2>
+                    <form class="okno__form form" action="/" method="post" id="registration-form">
+                        <input class="form__field" type="text" name="username" placeholder="Имя" id="username" required>
+                        <input class="form__field" type="text" name="login" placeholder="Логин" id="login" required>
+                        <input class="form__field" type="email" name="email" placeholder="Адрес электронной почты"
+                            id="email" required>
+                        <fieldset class="form__fieldset">
+                            <div class="form__field-block">
+                                <input class="form__field" type="password" name="password" placeholder="Пароль"
+                                    id="password" required>
+                                <span class="form__field-alert">Минимум 8 символов</span>
+                            </div>
+                            <input class="form__field" type="password" name="repeat-password"
+                                placeholder="Повторите пароль" id="confirm-password" required>
+                        </fieldset>
+                        <p id="error-message" class="error-message"></p>
+                        <fieldset class="form__buttons">
+                            <button class="button button--accent" type="submit">Зарегистрироваться</button>
+                            <button class="button button--close" data-close type="button">Отмена</button>
+                        </fieldset>
+                        <button class="button button--link" data-login type="button">У меня уже есть аккаунт</button>
+                    </form>
+                </section>
+                <!--/ Форма "Регистрация" -->
+                <!-- Форма "Войти" -->
+                <section class="okno" id="okno-login" hidden>
+                    <h2 class="okno__title">Войти</h2>
+                    <form class="okno__form form" action="/" method="post">
+                        <input class="form__field" type="text" name="login" placeholder="Логин" required>
+                        <input class="form__field" type="password" name="current-password" placeholder="Пароль"
+                            required>
+                        <fieldset class="form__buttons">
+                            <button class="button button--accent" type="submit">Войти</button>
+                            <button class="button button--close" data-close type="button">Отмена</button>
+                        </fieldset>
+                        <button class="button button--link" data-registration type="button">У меня еще нет
+                            аккаунта</button>
+                    </form>
+                </section>
+                <!--/ Форма "Войти" -->
+            </div>
+        </div>
     </div>
-    <script src="scripts/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="/scripts/script.js"></script>
 </body>
 </html>

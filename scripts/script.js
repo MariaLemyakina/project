@@ -247,3 +247,128 @@ fetch(apiUrl)
 	  }, 3000); // Задержка 3 секунды
   }
 	
+// Карусель (слайдер)
+const slider = document.querySelector('.swiper');
+ 
+if (slider) {
+	const swiper = new Swiper(slider, {
+		// Дополнительные параметры
+		slidesPerView: 4, // Количество слайдов на экране
+		spaceBetween: 30, // Расстояние между слайдами
+		loop: true,  // Зацикливание слайдов
+
+		// Пагинация
+		pagination: {
+			el: '.swiper-pagination',
+		},
+
+		// Навигационные стрелки
+		navigation: {
+			nextEl: '.swiper-button-next',
+			prevEl: '.swiper-button-prev',
+		},
+	});
+}
+
+/* 5. Появление форм */
+const loginHeaderButton = document.querySelector('.header__login');
+const dialogLayout = document.querySelector('.dialog');
+
+if (loginHeaderButton && dialogLayout) {
+	const closeDialogButtons = dialogLayout.querySelectorAll('[data-close]');
+	const selectOkno = dialogLayout.querySelector('#okno-select');
+	const loginOkno = dialogLayout.querySelector('#okno-login');
+	const registrationOkno = dialogLayout.querySelector('#okno-registration');
+	const switchToRegisterButtons = dialogLayout.querySelectorAll('[data-registration]');
+	const switchToLoginButtons = dialogLayout.querySelectorAll('[data-login]');
+
+	// Открытие модального окна при клике на кнопку "Войти"
+	loginHeaderButton.addEventListener('click', () => {
+		dialogLayout.removeAttribute('hidden');
+	});
+
+	// Закрытие модального окна при клике на кнопку закрытия
+	if (closeDialogButtons) {
+		closeDialogButtons.forEach(button => {
+			button.addEventListener('click', () => {
+				dialogLayout.setAttribute('hidden', true);
+				selectOkno.removeAttribute('hidden');
+				loginOkno.setAttribute('hidden', true);
+				registrationOkno.setAttribute('hidden', true);
+			});
+		});
+	}
+
+	// Закрытие модального окна при клике вне его области
+	window.addEventListener('click', (event) => {
+		if (event.target === dialogLayout) {
+			dialogLayout.setAttribute('hidden', true);
+			selectOkno.removeAttribute('hidden');
+			loginOkno.setAttribute('hidden', true);
+			registrationOkno.setAttribute('hidden', true);
+		}
+	});
+
+	// Переключение на форму регистрации
+	if (registrationOkno) {
+		switchToRegisterButtons.forEach(button => {
+			button.addEventListener('click', (event) => {
+				event.preventDefault();
+				selectOkno.setAttribute('hidden', true);
+				loginOkno.setAttribute('hidden', true);
+				registrationOkno.removeAttribute('hidden');
+			});
+		});
+	}
+
+	// Переключение на форму входа
+	if (loginOkno) {
+		switchToLoginButtons.forEach(button => {
+			button.addEventListener('click', (event) => {
+				event.preventDefault();
+				selectOkno.setAttribute('hidden', true);
+				registrationOkno.setAttribute('hidden', true);
+				loginOkno.removeAttribute('hidden');
+			});
+		});
+	}
+
+	// Отправка данных на форме регистрации
+	registrationOkno.addEventListener('submit', event => {
+		event.preventDefault(); // Предотвращаем отправку формы
+
+		const username = registrationOkno.querySelector('#username').value;
+		const login = registrationOkno.querySelector('#login').value;
+		const email = registrationOkno.querySelector('#email').value;
+		const password = registrationOkno.querySelector('#password').value;
+		const confirmPassword = registrationOkno.querySelector('#confirm-password').value;
+
+		const errorMessage = registrationOkno.querySelector('#error-message');
+
+		if (password !== confirmPassword) {
+			errorMessage.textContent = 'Пароли не совпадают';
+			errorMessage.style.color = 'red';
+			return;
+		}
+
+		if (username.length < 3) {
+			errorMessage.textContent = 'Имя пользователя должно содержать не менее 3 символов';
+			return;
+		}
+
+		if (password.length < 8) {
+			errorMessage.textContent = 'Пароль должен содержать не менее 8 символов';
+			return;
+		}
+
+		// Здесь можно добавить отправку данных на сервер
+		errorMessage.textContent = 'Регистрация прошла успешно!';
+		errorMessage.style.color = 'green';
+
+		// Запишем логин
+		window.localStorage.setItem("login", login);
+
+		// Очистка формы
+		document.getElementById('registration-form').reset();
+	});
+}

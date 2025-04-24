@@ -25,3 +25,25 @@
     background-image: url("../images/red_background.png");
     cursor: pointer;
 }
+
+.button--link {
+    width: fit-content;
+    margin: 0 auto;
+
+    text-decoration: underline;
+    text-decoration-style: dashed;
+    text-underline-offset: 8px;
+    color: #FDA3C4;
+    border: none;
+    background-color: transparent;
+    background-image: none;
+    transition: text-decoration-color 0.3s;
+}
+
+.button--link:hover,
+.button--link:focus {
+    color: #FDA3C4;
+    background-color: #ffffff;
+    background-image: none;
+    text-decoration-color: transparent;
+}

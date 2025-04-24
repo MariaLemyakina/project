@@ -1,0 +1,79 @@
+.dialog {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+ 
+    width: 100%;
+    height: 100%;
+ 
+    background-color: rgba(58, 60, 65, 0.25);
+}
+ 
+.dialog__content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+ 
+    max-width: 700px;
+    width: 100%;
+    padding: 60px;
+ 
+    border-radius: 24px;
+ 
+    transform: translate(-50%, -50%);
+ 
+    background-color: #ffffff;
+    box-shadow: 0 16px 72px 0 rgba(34, 39, 47, 0.05);
+}
+ 
+.okno__close {
+    position: absolute;
+    top: 0;
+    right: 0;
+ 
+    padding: 22px 20px;
+ 
+    background-color: initial;
+    border: none;
+ 
+    cursor: pointer;
+}
+ 
+.okno__title {
+    font-family: 'Montserrat', Arial, sans-serif;
+    margin-bottom: 29px;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 30px;
+}
+ 
+.okno__title--registration {
+    margin-bottom: 47px;
+}
+ 
+.okno.okno__desc .okno__title {
+    margin-bottom: 30px;
+}
+ 
+.okno__desc {
+    font-family: 'Montserrat', Arial, sans-serif;
+    margin-bottom: 40px;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 25px;
+}
+ 
+.okno__buttons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    margin-top: 60px;
+    height: 60px;
+    gap: 50px;
+}
+
+.button{
+    font-family: 'Sunday-Regular', Arial, sans-serif;
+    font-size: 20px;
+}
