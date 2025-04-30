@@ -208,6 +208,12 @@ margin-left:  auto;
     width: 250px;
     position: relative;
 }
+.top__bigmeaning{
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 280px;
+    width: 100px;
+}
 .top__element{
     margin-top: 15px;
 }
@@ -217,8 +223,15 @@ margin-left:  auto;
 }
 .top__price{
     font-family: 'Montserrat', Arial, sans-serif;
-    font-weight: 600;
+    font-weight: 700;
     font-size: 16px;
+    color: #FDA3C4;
+    line-height: 100%;
+}
+.top__bigprice{
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-weight: 700;
+    font-size: 23px;
     color: #FDA3C4;
     line-height: 100%;
 }
